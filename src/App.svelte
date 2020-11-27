@@ -1,7 +1,8 @@
 <script>
-import Input from "./Input.svelte";
-let inputText = ""
-let storeName=["Apple", "Amazon", "Google", "Facebook", "Lederek", "Microsoft", "Zeferino"];
+	import AutoComplete from './AutoComplete.svelte';
+	import {colors} from './color-store.js';
+
+	let items = colors;
 </script>
 
-<Input arrayToSearch={storeName} {inputText}/>
+<AutoComplete {items}/>
